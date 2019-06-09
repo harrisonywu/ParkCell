@@ -9,7 +9,6 @@ class App extends React.Component {
   render() {
     return (
     <div>
-      APP COMPONENT RENDERING
       <GoogleMapReact />
     </div>
     )

@@ -4,42 +4,59 @@ import GoogleMapReact from 'google-map-react';
 import parkData from '../data/parkData.js'
 import styles from './Map.css'
 
-const AnyReactComponent = () => <img src={'/home/harrisonywu/Documents/projects/ridecell-app/client/src/assets/map-marker.png'}></img>;
 
-class SimpleMap extends Component {
+// Creates markers for each 
+const apiIsLoaded = (map, maps, parkData) => {
+  let markers = [];
+  
+  parkData.forEach((park, index) => {
+    let { lat, lng, title, phone} = park;
+    lat = parseFloat(lat);
+    lng = parseFloat(lng)
+    var marker = new google.maps.Marker({
+      position: {lat: lat, lng: lng},
+      map: map,
+      title: title,
+    });
+    marker.addListener('click', function() {
+      alert(`Title: ${title} \nPhone: ${phone}`)
+    })
+    markers.push(marker);
+  })
+
+  let markerCluster = new MarkerClusterer(map, markers,
+    {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+};
+class Map extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      parkData
+    };
+  }
   static defaultProps = {
     center: {
-      lat: 37.77,
-      lng: -122.42
+      lat: 31.9686,
+      lng: -99.9018
     },
+    zoom: 6
 
-    zoom: 8
-  }
-  ;
+  };
 
   render() {
     return (
-      // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
-        <div>Map component</div>
         <GoogleMapReact
           bootstrapURLKeys={{ key: TOKEN_GOOGLE_MAPS }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-        >
-          {/* the below lines will loop through a JSON containing our state parks*/}
-          {this.props.coordinates.map((park, index) => {
-            return <AnyReactComponent lat={park.lat} lng={park.lng} key={index}/>
-          })}
-          {/* <AnyReactComponent
-            lat={37.77}
-            lng={-122.42}
-            text="My Marker"
-          /> */}
-        </GoogleMapReact>
+          yesIWantToUseGoogleMapApiInternals
+          onGoogleApiLoaded={({ map, maps }) => apiIsLoaded(map, maps, this.state.parkData)}
+        ></GoogleMapReact>
       </div>
     );
   }
 }
 
-export default SimpleMap;
+export default Map;
