@@ -3,3 +3,6 @@ node_modules
 
 # webpack bundle
 public/bundle.js
+
+# google maps API key
+/client/src/config/mapsConfig.js
