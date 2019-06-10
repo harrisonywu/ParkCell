@@ -13,6 +13,8 @@
     "google-map-react": "^1.1.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-react": "^0.87.1",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.2"
   },

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { TOKEN_GOOGLE_MAPS } from '../config/mapsConfig.js';
 import GoogleMapReact from 'google-map-react';
 import parkData from '../data/parkData.js'
-
+import styles from './Map.css'
 
 // Creates markers for each park in this.state.parkData
 const loadMarkers = (map, maps, parkData) => {
   let markers = [];
   
   parkData.forEach((park, index) => {
-    let { lat, lng, title, phone} = park;
+    let { lat, lng, title, phone, link, img_url} = park;
     lat = parseFloat(lat);
     lng = parseFloat(lng)
     var marker = new google.maps.Marker({
@@ -17,8 +17,27 @@ const loadMarkers = (map, maps, parkData) => {
       map: map,
       title: title,
     });
-    marker.addListener('click', function() {
-      alert(`Title: ${title} \nPhone: ${phone}`)
+
+    let contentString = 
+    '<div id="content">'+
+      '<div id="siteNotice">'+
+    '</div>'+
+    `<h1>${title}</h1>`+
+    '<div id="bodyContent">'+
+    `<img class="location-image" src=${img_url}></img>` +
+    `<div>Phone Number: ${phone} </div>` +
+    `<div>Coordinates: Latitute: ${lat}, Longitude: ${lng}` +
+    `<p>Park Website: <a href="${link}">`+
+    `${link}</a> `+
+    '</div>'+
+    '</div>';
+
+    let infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
+    marker.addListener('click', () => {
+      infowindow.open(map, marker);
     })
     markers.push(marker);
   })
