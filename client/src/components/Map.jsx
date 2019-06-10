@@ -13,7 +13,6 @@ class Map extends Component {
     this.state = {
       map: null,
       markers: null,
-      // markerCluster: null,
       parkData,
       filteredParkData: parkData,
       center: { lat: 31.9686, lng: -99.9018 },
@@ -29,17 +28,14 @@ class Map extends Component {
   }
 
 
-  // pass in the map and
-  loadMarkers(map, maps, parkData) {
-    // currently, this function creates markers, and then it saves them locally, and creates marker cluster locally
+  loadMarkers(map, parkData) {
     let markers = [];
-    
     parkData.forEach((park) => {
-      let { lat, lng, title, phone, link, img_url} = park;
+      let { lat, lng, title, phone, link, img_url } = park;
       lat = parseFloat(lat);
-      lng = parseFloat(lng)
+      lng = parseFloat(lng);
       var marker = new google.maps.Marker({
-        position: {lat: lat, lng: lng},
+        position: {lat, lng},
         map: map,
         title: title,
       });
@@ -62,7 +58,8 @@ class Map extends Component {
   
       marker.addListener('click', () => {
         infowindow.open(map, marker);
-      })
+      });
+
       markers.push(marker);
     })
   
@@ -102,8 +99,7 @@ class Map extends Component {
    This should result in a new markers/new marker cluster
    DON'T FORGET TO ALLOW FOR ALL THE PARKS TO RERENDER IF YOU PRESS RESET/SEARCH FOR EMPTY TERM
   */
-  searchParks(e) {
-    // e.preventDefault();
+  searchParks() {
     const { searchTerm, parkData, map } = this.state;
     let filteredParkData = parkData.filter((park, index) => {
       return park.title.includes(searchTerm);
@@ -112,7 +108,7 @@ class Map extends Component {
     this.setState({filteredParkData}, (err, success) => {
       if (err) throw err;
       this.clearMarkers();
-      this.loadMarkers(map, null, filteredParkData)
+      this.loadMarkers(map, filteredParkData)
     })
    }
 
@@ -127,8 +123,8 @@ class Map extends Component {
           defaultCenter={center}
           defaultZoom={zoom}
           yesIWantToUseGoogleMapApiInternals
-          onGoogleApiLoaded={({ map, maps }) => {
-            this.setState({map}, () => (this.loadMarkers(map, maps, filteredParkData)));
+          onGoogleApiLoaded={({ map }) => {
+            this.setState({map}, () => (this.loadMarkers(map, filteredParkData)));
           }} 
         ></GoogleMapReact>
       </div>
