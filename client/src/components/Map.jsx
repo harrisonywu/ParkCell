@@ -39,7 +39,9 @@ class Map extends Component {
         map: map,
         title: title,
       });
-  
+      
+      let busySeasonString = busy_seasons ? busy_seasons : 'No season information.';
+
       let contentString = 
       '<div id="content">'+
         '<div id="siteNotice"></div>'+
@@ -50,7 +52,7 @@ class Map extends Component {
             `<div>Phone Number: ${phone} </div>` +
             `<div>Latitute: ${lat} | Longitude: ${lng}` +
           `<p>Park Website: <a href="${link}">${title}'s Page</a> `+
-          `<p>Busy Season: ${busy_seasons}</p>`
+          `<p>Busy Season: ${busySeasonString}</p>`
         '</div>'+
       '</div>';
   
@@ -96,8 +98,9 @@ class Map extends Component {
 
   searchParks() {
     const { searchTerm, parkData, map } = this.state;
+    let searchTermCapital = searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1);
     let filteredParkData = parkData.filter((park) => {
-      return park.title.includes(searchTerm);
+      return park.title.includes(searchTerm) || park.title.includes(searchTermCapital);
     })    
 
     this.setState({filteredParkData}, (err) => {
