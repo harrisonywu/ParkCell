@@ -1,5 +1,5 @@
 
-var parkData = [
+const parkData = [
   {
     "link": "https://tpwd.texas.gov/state-parks/abilene",
     "title": "Abilene State Park",
@@ -8,6 +8,8 @@ var parkData = [
     "lat": "32.240731",
     "lng": "-99.879139",
     "img_url": "https://tpwd.texas.gov/state-parks/abilene/gallery/Abilene_Pool1.jpg",
+    "busy_seasons": "March through November",
+    "address": "150 Park Road 32"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/atlanta",
@@ -16,7 +18,9 @@ var parkData = [
     "city": "Atlanta",
     "lat": "33.230731",
     "lng": "-94.249693",
-    "img_url": "https://tpwd.texas.gov/state-parks/atlanta/gallery/Atlanta-bluff.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/atlanta/gallery/Atlanta-bluff.jpg",
+    "busy_seasons": "Summer",
+    "address": "927 Park Road 42"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/balmorhea",
@@ -25,7 +29,9 @@ var parkData = [
     "city": "Toyahvale",
     "lat": "30.945036",
     "lng": "-103.786663",
-    "img_url": "https://tpwd.texas.gov/state-parks/balmorhea/gallery/balmorhea-aerial.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/balmorhea/gallery/balmorhea-aerial.jpg",
+    "busy_seasons": "March through Labor Day",
+    "address": "9207 TX-17"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/barton-warnock",
@@ -34,7 +40,9 @@ var parkData = [
     "city": "Terlingua",
     "lat": "29.269902",
     "lng": "-103.757351",
-    "img_url": "https://tpwd.texas.gov/state-parks/barton-warnock/gallery/warnock0017.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/barton-warnock/gallery/warnock0017.jpg",
+    "busy_seasons": "",
+    "address": ""
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/bastrop",
@@ -43,7 +51,9 @@ var parkData = [
     "city": "Bastrop",
     "lat": "30.110149",
     "lng": "-97.286864",
-    "img_url": "https://tpwd.texas.gov/state-parks/bastrop/gallery/bastrop-cabin.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/bastrop/gallery/bastrop-cabin.jpg",
+    "busy_seasons": "Summer",
+    "address": "9207 TX-17"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/battleship-texas",
@@ -52,7 +62,9 @@ var parkData = [
     "city": "LaPorte",
     "lat": "29.755810",
     "lng": "-95.090349",
-    "img_url": "https://tpwd.texas.gov/state-parks/battleship-texas/gallery/bstx_5588.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/battleship-texas/gallery/bstx_5588.jpg",
+    "busy_seasons": "Summer",
+    "address": "3523 Independence Parkway South "
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/bentsen-rio-grande-valley",
@@ -61,7 +73,9 @@ var parkData = [
     "city": "Mission",
     "lat": "26.186987",
     "lng": "-98.381888",
-    "img_url": "https://tpwd.texas.gov/state-parks/bentsen-rio-grande-valley/gallery/world-birding-center-hq449.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/bentsen-rio-grande-valley/gallery/world-birding-center-hq449.jpg",
+    "busy_seasons": "September through April",
+    "address": "2800 S. Bentsen Palm Drive"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/big-bend-ranch",
@@ -70,7 +84,9 @@ var parkData = [
     "city": "Presidio",
     "lat": "29.470458",
     "lng": "-103.957922",
-    "img_url": "https://tpwd.texas.gov/state-parks/big-bend-ranch/gallery/BBRSP_4158.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/big-bend-ranch/gallery/BBRSP_4158.jpg",
+    "busy_seasons": "",
+    "address": "1900 Sauceda Ranch Road"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/big-spring",
@@ -79,7 +95,9 @@ var parkData = [
     "city": "Big Spring",
     "lat": "32.232288",
     "lng": "-101.490728",
-    "img_url": "https://tpwd.texas.gov/state-parks/big-spring/gallery/bigspring914_18.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/big-spring/gallery/bigspring914_18.jpg",
+    "busy_seasons": "",
+    "address": "No. 1 Scenic Drive"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/blanco",
@@ -88,7 +106,9 @@ var parkData = [
     "city": "Blanco",
     "lat": "30.093082",
     "lng": "-98.423845",
-    "img_url": "https://tpwd.texas.gov/state-parks/blanco/gallery/blanco-sp_065.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/blanco/gallery/blanco-sp_065.jpg",
+    "busy_seasons": "",
+    "address": "101 Park Road 23"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/bonham",
@@ -97,7 +117,9 @@ var parkData = [
     "city": "Bonham",
     "lat": "33.546727",
     "lng": "-96.144758",
-    "img_url": "https://tpwd.texas.gov/state-parks/bonham/gallery/bonham-sp_4419.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/bonham/gallery/bonham-sp_4419.jpg",
+    "busy_seasons": "",
+    "address": "1363 State Park 24"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/brazos-bend",
@@ -106,7 +128,9 @@ var parkData = [
     "city": "Needville",
     "lat": "29.371000",
     "lng": "-95.631921",
-    "img_url": "https://tpwd.texas.gov/state-parks/brazos-bend/gallery/brazos-bend_8275.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/brazos-bend/gallery/brazos-bend_8275.jpg",
+    "busy_seasons": "",
+    "address": "21901 FM 762"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/buescher",
@@ -115,7 +139,9 @@ var parkData = [
     "city": "Smithville",
     "lat": "30.039098",
     "lng": "-97.158295",
-    "img_url": "https://tpwd.texas.gov/state-parks/buescher/gallery/ccc-group-picnic-shelter-at-buescher.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/buescher/gallery/ccc-group-picnic-shelter-at-buescher.jpg",
+    "busy_seasons": "March through November",
+    "address": "100 Park Road 1E"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/caddo-lake",
@@ -124,7 +150,9 @@ var parkData = [
     "city": "Karnack",
     "lat": "32.680233",
     "lng": "-94.176361",
-    "img_url": "https://tpwd.texas.gov/state-parks/caddo-lake/gallery/Caddo%20Lake_0049_04.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/caddo-lake/gallery/Caddo%20Lake_0049_04.jpg",
+    "busy_seasons": "March through November",
+    "address": "245 Park Road 2"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/caprock-canyons",
@@ -133,7 +161,9 @@ var parkData = [
     "city": "Quitaque",
     "lat": "34.410296",
     "lng": "-101.053264",
-    "img_url": "https://tpwd.texas.gov/state-parks/caprock-canyons/gallery/caprock_bison-release-_mg_1243a-opti.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/caprock-canyons/gallery/caprock_bison-release-_mg_1243a-opti.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "850 State Park Rd."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/caprock-canyons",
@@ -142,7 +172,9 @@ var parkData = [
     "city": "Quitaque",
     "lat": "34.43238",
     "lng": "-100.875097",
-    "img_url": "https://tpwd.texas.gov/state-parks/caprock-canyons/gallery/caprock-canyons-sp-_u8e0731.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/caprock-canyons/gallery/caprock-canyons-sp-_u8e0731.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "850 State Park Rd."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/cedar-hill",
@@ -151,7 +183,9 @@ var parkData = [
     "city": "Cedar Hill",
     "lat": "32.621721",
     "lng": "-96.979087",
-    "img_url": "https://tpwd.texas.gov/state-parks/cedar-hill/gallery/cedar_hill_sp_u8e9357-opti.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/cedar-hill/gallery/cedar_hill_sp_u8e9357-opti.jpg",
+    "busy_seasons": "Summer",
+    "address": "1570 West FM 1382"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/choke-canyon",
@@ -160,7 +194,9 @@ var parkData = [
     "city": "Calliham",
     "lat": "28.465773",
     "lng": "-98.354195",
-    "img_url": "https://tpwd.texas.gov/state-parks/choke-canyon/gallery/spg-cvr_7792.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/choke-canyon/gallery/spg-cvr_7792.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "358 Recreation Rd. 8"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/choke-canyon",
@@ -169,7 +205,9 @@ var parkData = [
     "city": "Calliham",
     "lat": "28.467458",
     "lng": "-98.246528",
-    "img_url": "https://tpwd.texas.gov/state-parks/choke-canyon/gallery/lake-fishing-959.7_02.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/choke-canyon/gallery/lake-fishing-959.7_02.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "358 Recreation Rd. 8"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/cleburne",
@@ -178,7 +216,9 @@ var parkData = [
     "city": "Cleburne",
     "lat": "32.252365",
     "lng": "-97.549617",
-    "img_url": "https://tpwd.texas.gov/state-parks/cleburne/gallery/sunrise-on-cedar-lake-at-cleburne-sp.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/cleburne/gallery/sunrise-on-cedar-lake-at-cleburne-sp.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "5800 Park Road 21"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/colorado-bend",
@@ -187,7 +227,9 @@ var parkData = [
     "city": "Bend",
     "lat": "31.022965",
     "lng": "-98.442401",
-    "img_url": "https://tpwd.texas.gov/state-parks/colorado-bend/gallery/colorado-bend_4926_30.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/colorado-bend/gallery/colorado-bend_4926_30.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "P. O. Box 118"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/cooper-lake",
@@ -196,7 +238,9 @@ var parkData = [
     "city": "Cooper",
     "lat": "33.348700",
     "lng": "-95.663677",
-    "img_url": "https://tpwd.texas.gov/state-parks/cooper-lake/gallery/cooper_lake_sp_u8e9252_1.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/cooper-lake/gallery/cooper_lake_sp_u8e9252_1.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "Doctors Creek Unit 1664 FM 1529"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/cooper-lake",
@@ -205,7 +249,9 @@ var parkData = [
     "city": "Sulphur Springs",
     "lat": "33.287730",
     "lng": "-95.657920",
-    "img_url": "https://tpwd.texas.gov/state-parks/cooper-lake/gallery/cooper_lake_sp_u8e9193.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/cooper-lake/gallery/cooper_lake_sp_u8e9193.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "South Sulphur Unit 1690 FM 3505 "
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/copper-breaks",
@@ -214,7 +260,9 @@ var parkData = [
     "city": "Quanah",
     "lat": "34.112176",
     "lng": "-99.743296",
-    "img_url": "https://tpwd.texas.gov/state-parks/copper-breaks/gallery/copper-breaks_0193.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/copper-breaks/gallery/copper-breaks_0193.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "777 Park Road 62"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/daingerfield",
@@ -223,7 +271,9 @@ var parkData = [
     "city": "Daingerfield",
     "lat": "33.013000",
     "lng": "-94.690587",
-    "img_url": "https://tpwd.texas.gov/state-parks/daingerfield/gallery/daingerfield_sp-img_0347.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/daingerfield/gallery/daingerfield_sp-img_0347.jpg",
+    "busy_seasons": "Mid-March through Thanksgiving",
+    "address": "455 Park Road 17"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/davis-mountains",
@@ -232,7 +282,9 @@ var parkData = [
     "city": "Fort Davis",
     "lat": "30.599103",
     "lng": "-103.929450",
-    "img_url": "https://tpwd.texas.gov/state-parks/davis-mountains/gallery/davis-mnts_3026.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/davis-mountains/gallery/davis-mnts_3026.jpg",
+    "busy_seasons": "March through Labor Day",
+    "address": "TX-118 N., Park Rd. 3"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/devils-sinkhole",
@@ -241,7 +293,9 @@ var parkData = [
     "city": "Rocksprings",
     "lat": "30.015773",
     "lng": "-100.208552",
-    "img_url": "https://tpwd.texas.gov/state-parks/devils-sinkhole/gallery/devils-sink-hole_100.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/devils-sinkhole/gallery/devils-sink-hole_100.jpg",
+    "busy_seasons": "",
+    "address": "101 N. Sweeten St."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/devils-river",
@@ -250,7 +304,9 @@ var parkData = [
     "city": "Del Rio",
     "lat": "29.939694",
     "lng": "-100.970206",
-    "img_url": "https://tpwd.texas.gov/state-parks/devils-river/gallery/devils-river_7804.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/devils-river/gallery/devils-river_7804.jpg",
+    "busy_seasons": "",
+    "address": "21715 Dolan Creek Rd."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/dinosaur-valley",
@@ -259,7 +315,9 @@ var parkData = [
     "city": "Glen Rose",
     "lat": "32.246194",
     "lng": "-97.813375",
-    "img_url": "https://tpwd.texas.gov/state-parks/dinosaur-valley/gallery/DSVSP_opti_9758_05.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/dinosaur-valley/gallery/DSVSP_opti_9758_05.jpg",
+    "busy_seasons": "March through November",
+    "address": "1629 Park Rd 59"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/eisenhower",
@@ -268,7 +326,9 @@ var parkData = [
     "city": "Denison",
     "lat": "33.810339",
     "lng": "-96.599971",
-    "img_url": "https://tpwd.texas.gov/state-parks/eisenhower/gallery/boy-fishing-at-eisenhower-silhouette.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/eisenhower/gallery/boy-fishing-at-eisenhower-silhouette.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "50 Park Road 20"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/enchanted-rock",
@@ -277,7 +337,9 @@ var parkData = [
     "city": "Fredericksburg",
     "lat": "30.496033",
     "lng": "-98.819952",
-    "img_url": "https://tpwd.texas.gov/state-parks/enchanted-rock/gallery/E-rock_4876.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/enchanted-rock/gallery/E-rock_4876.jpg",
+    "busy_seasons": "September through May",
+    "address": "16710 Ranch Rd. 965"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/estero-llano-grande",
@@ -286,7 +348,9 @@ var parkData = [
     "city": "Weslaco",
     "lat": "26.126411",
     "lng": "-97.956518",
-    "img_url": "https://tpwd.texas.gov/state-parks/estero-llano-grande/gallery/estero_llano_grande-_mg_2613.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/estero-llano-grande/gallery/estero_llano_grande-_mg_2613.jpg",
+    "busy_seasons": "October through May",
+    "address": "3301 S. International Blvd."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/fairfield-lake",
@@ -295,7 +359,9 @@ var parkData = [
     "city": "Fairfield",
     "lat": "31.765346",
     "lng": "-96.073282",
-    "img_url": "https://tpwd.texas.gov/state-parks/fairfield-lake/gallery/lake-fairfield-redfish246.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/fairfield-lake/gallery/lake-fairfield-redfish246.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "123 State Park Road 64"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/falcon",
@@ -304,7 +370,9 @@ var parkData = [
     "city": "Falcon Heights",
     "lat": "26.582801",
     "lng": "-99.142716",
-    "img_url": "https://tpwd.texas.gov/state-parks/falcon/gallery/falcon_sp_8768.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/falcon/gallery/falcon_sp_8768.jpg",
+    "busy_seasons": "Fall and winter",
+    "address": "146 Park Rd 46"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/fanthorp-inn",
@@ -313,7 +381,9 @@ var parkData = [
     "city": "Anderson",
     "lat": "30.482941",
     "lng": "-95.983824",
-    "img_url": "https://tpwd.texas.gov/state-parks/fanthorp-inn/gallery/fanthorp-inn-angle-shot.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/fanthorp-inn/gallery/fanthorp-inn-angle-shot.jpg",
+    "busy_seasons": "",
+    "address": "579 S. Main St."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/fort-boggy",
@@ -322,7 +392,9 @@ var parkData = [
     "city": "Centerville",
     "lat": "31.187372",
     "lng": "-95.976646",
-    "img_url": "https://tpwd.texas.gov/state-parks/fort-boggy/gallery/fort-boggy_1388.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/fort-boggy/gallery/fort-boggy_1388.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "4994 Highway 75 South"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/fort-leaton",
@@ -331,7 +403,9 @@ var parkData = [
     "city": "Presidio",
     "lat": "29.542511",
     "lng": "-104.326348",
-    "img_url": "https://tpwd.texas.gov/state-parks/fort-leaton/gallery/fort-leaton_3588.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/fort-leaton/gallery/fort-leaton_3588.jpg",
+    "busy_seasons": "September through April",
+    "address": "FM 170 E."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/fort-parker",
@@ -340,7 +414,9 @@ var parkData = [
     "city": "Mexia",
     "lat": "31.592347",
     "lng": "-96.526655",
-    "img_url": "https://tpwd.texas.gov/state-parks/fort-parker/gallery/fort-parker-sunset-1.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/fort-parker/gallery/fort-parker-sunset-1.jpg",
+    "busy_seasons": "Weekends in spring, early summer and fall",
+    "address": "194 Park Road 28"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/fort-richardson",
@@ -349,7 +425,9 @@ var parkData = [
     "city": "Jacksboro",
     "lat": "33.206158",
     "lng": "-98.156966",
-    "img_url": "https://tpwd.texas.gov/state-parks/fort-richardson/gallery/fort-richardson_101b.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/fort-richardson/gallery/fort-richardson_101b.jpg",
+    "busy_seasons": "Spring and fall",
+    "address": "228 State Park Road 61"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/franklin-mountains",
@@ -358,7 +436,9 @@ var parkData = [
     "city": "El Paso",
     "lat": "31.842388",
     "lng": "-106.486444",
-    "img_url": "https://tpwd.texas.gov/state-parks/franklin-mountains/gallery/franklin-mts-entrance.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/franklin-mountains/gallery/franklin-mts-entrance.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "1331 McKelligon Canyon Road"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/galveston-island",
@@ -367,7 +447,9 @@ var parkData = [
     "city": "Galveston",
     "lat": "29.193560",
     "lng": "-94.954025",
-    "img_url": "https://tpwd.texas.gov/state-parks/galveston-island/gallery/galveston_u8e5190.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/galveston-island/gallery/galveston_u8e5190.jpg",
+    "busy_seasons": "March through October, especially weekends",
+    "address": "14901 FM 3005"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/garner",
@@ -376,7 +458,9 @@ var parkData = [
     "city": "Concan",
     "lat": "29.598887",
     "lng": "-99.743981",
-    "img_url": "https://tpwd.texas.gov/state-parks/garner/gallery/GARNER-SP_HDR_3941.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/garner/gallery/GARNER-SP_HDR_3941.jpg",
+    "busy_seasons": "Memorial Day – Mid-August",
+    "address": "234 RR 1050"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/goliad",
@@ -385,7 +469,9 @@ var parkData = [
     "city": "Goliad",
     "lat": "28.656544",
     "lng": "-97.387265",
-    "img_url": "https://tpwd.texas.gov/state-parks/goliad/gallery/goliad-sp-hs_5690.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/goliad/gallery/goliad-sp-hs_5690.jpg",
+    "busy_seasons": "December to March",
+    "address": "108 Park Road 6"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/goose-island",
@@ -394,7 +480,9 @@ var parkData = [
     "city": "Rockport",
     "lat": "28.133503",
     "lng": "-96.984280",
-    "img_url": "https://tpwd.texas.gov/state-parks/goose-island/gallery/goose_island_pier.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/goose-island/gallery/goose_island_pier.jpg",
+    "busy_seasons": "Memorial Day through Labor Day, October through Thanksgiving, and January through April",
+    "address": "202 S. Palmetto St."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/government-canyon",
@@ -403,7 +491,9 @@ var parkData = [
     "city": "San Antonio",
     "lat": "29.549316",
     "lng": "-98.764715",
-    "img_url": "https://tpwd.texas.gov/state-parks/government-canyon/gallery/gov-canyon-panoramic.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/government-canyon/gallery/gov-canyon-panoramic.jpg",
+    "busy_seasons": "good-weather weekends and holidays",
+    "address": "12861 Galm Rd"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/guadalupe-river",
@@ -412,7 +502,9 @@ var parkData = [
     "city": "Spring Branch",
     "lat": "29.853084",
     "lng": "-98.504463",
-    "img_url": "https://tpwd.texas.gov/state-parks/guadalupe-river/gallery/GRSP_river.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/guadalupe-river/gallery/GRSP_river.jpg",
+    "busy_seasons": "March through November",
+    "address": "3350 Park Road 31"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/hill-country",
@@ -421,7 +513,9 @@ var parkData = [
     "city": "Bandera",
     "lat": "29.628034",
     "lng": "-99.181086",
-    "img_url": "https://tpwd.texas.gov/state-parks/hill-country/gallery/hcsna_22.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/hill-country/gallery/hcsna_22.jpg",
+    "busy_seasons": "Spring and fall",
+    "address": "10600 Bandera Creek Road"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/honey-creek",
@@ -430,7 +524,9 @@ var parkData = [
     "city": "Spring Branch",
     "lat": "29.863258",
     "lng": "-98.489913",
-    "img_url": "https://tpwd.texas.gov/state-parks/honey-creek/gallery/honey-creek_4860.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/honey-creek/gallery/honey-creek_4860.jpg",
+    "busy_seasons": "",
+    "address": "Park Road 31"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/hueco-tanks",
@@ -439,7 +535,9 @@ var parkData = [
     "city": "El Paso",
     "lat": "31.926453",
     "lng": "-106.042437",
-    "img_url": "https://tpwd.texas.gov/state-parks/hueco-tanks/gallery/hueco-tanks_6061.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/hueco-tanks/gallery/hueco-tanks_6061.jpg",
+    "busy_seasons": "Winter and holiday weekends",
+    "address": "6900 Hueco Tanks Road No. 1"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/huntsville",
@@ -448,7 +546,9 @@ var parkData = [
     "city": "Huntsville",
     "lat": "30.628404",
     "lng": "-95.525921",
-    "img_url": "https://tpwd.texas.gov/state-parks/huntsville/gallery/huntsville-_mg_5904.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/huntsville/gallery/huntsville-_mg_5904.jpg",
+    "busy_seasons": "Mid-February to Thanksgiving",
+    "address": "565 Park Road 40 W"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/indian-lodge",
@@ -457,7 +557,9 @@ var parkData = [
     "city": "Fort Davis",
     "lat": "30.592638",
     "lng": "-103.943469",
-    "img_url": "https://tpwd.texas.gov/state-parks/indian-lodge/gallery/indian-ldg_hdr_1167.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/indian-lodge/gallery/indian-ldg_hdr_1167.jpg",
+    "busy_seasons": "March through Labor Day",
+    "address": "16453 Park Rd. 3"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/inks-lake",
@@ -466,7 +568,9 @@ var parkData = [
     "city": "Burnet",
     "lat": "30.737356",
     "lng": "-98.369007",
-    "img_url": "https://tpwd.texas.gov/state-parks/inks-lake/gallery/Inks-Lake_0124.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/inks-lake/gallery/Inks-Lake_0124.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "3630 Park Road 4 West"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/kickapoo-cavern",
@@ -475,7 +579,9 @@ var parkData = [
     "city": "Brackettville",
     "lat": "29.610016",
     "lng": "-100.452465",
-    "img_url": "https://tpwd.texas.gov/state-parks/kickapoo-cavern/gallery/kickapoo-cavern-sp.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/kickapoo-cavern/gallery/kickapoo-cavern-sp.jpg",
+    "busy_seasons": "",
+    "address": "20939 RR 674"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-arrowhead",
@@ -484,7 +590,9 @@ var parkData = [
     "city": "Wichita Falls",
     "lat": "33.758578",
     "lng": "-98.395201",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-arrowhead/gallery/lk-arrowhead_rving_4703.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-arrowhead/gallery/lk-arrowhead_rving_4703.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "229 Park Road 63"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-bob-sandlin",
@@ -493,7 +601,9 @@ var parkData = [
     "city": "Pittsburg",
     "lat": "33.053955",
     "lng": "-95.099155",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-bob-sandlin/gallery/lake-bob-sandlin-2189-hiker-mccorkle.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-bob-sandlin/gallery/lake-bob-sandlin-2189-hiker-mccorkle.jpg",
+    "busy_seasons": "March through October",
+    "address": "341 State Park Road 2117"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-brownwood",
@@ -502,7 +612,9 @@ var parkData = [
     "city": "Lake Brownwood",
     "lat": "31.856987",
     "lng": "-99.028641",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-brownwood/gallery/lake-brownwood-sp_g4f6825.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-brownwood/gallery/lake-brownwood-sp_g4f6825.jpg",
+    "busy_seasons": "Summer for all facilities, Weekends and holidays for cabins and lodges",
+    "address": "200 State Highway Park Road 15"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-casa-blanca",
@@ -511,7 +623,9 @@ var parkData = [
     "city": "Laredo",
     "lat": "27.539343",
     "lng": "-99.451383",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-casa-blanca/gallery/lk_casa_blanca_9250.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-casa-blanca/gallery/lk_casa_blanca_9250.jpg",
+    "busy_seasons": "April through August",
+    "address": "5102 Bob Bullock Loop"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-colorado-city",
@@ -520,7 +634,9 @@ var parkData = [
     "city": "Colorado City",
     "lat": "32.318219",
     "lng": "-100.936476",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-colorado-city/gallery/lccsp_2090.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-colorado-city/gallery/lccsp_2090.jpg",
+    "busy_seasons": "Easter weekend through Labor Day",
+    "address": "4582 FM 2836"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-corpus-christi",
@@ -529,7 +645,9 @@ var parkData = [
     "city": "Mathis",
     "lat": "28.063101",
     "lng": "-97.872178",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-corpus-christi/gallery/lccsp_ccc_1064.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-corpus-christi/gallery/lccsp_ccc_1064.jpg",
+    "busy_seasons": "Weekends in late winter through summer",
+    "address": "23194 Park Rd. 25"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-livingston",
@@ -538,7 +656,9 @@ var parkData = [
     "city": "Livingston",
     "lat": "30.656897",
     "lng": "-95.001093",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-livingston/gallery/LK-Livingston_3035.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-livingston/gallery/LK-Livingston_3035.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "300 Park Road 65"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-mineral-wells",
@@ -547,7 +667,9 @@ var parkData = [
     "city": "Mineral Wells",
     "lat": "32.812655",
     "lng": "-98.043368",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-mineral-wells/gallery/lmwsp_overlook_0369.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-mineral-wells/gallery/lmwsp_overlook_0369.jpg",
+    "busy_seasons": "Mid-March through mid-November",
+    "address": "100 Park Road 71"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-mineral-wells",
@@ -556,7 +678,9 @@ var parkData = [
     "city": "Mineral Wells",
     "lat": "32.837278",
     "lng": "-97.971078",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-mineral-wells/gallery/lmwsp_overlook_0369.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-mineral-wells/gallery/lmwsp_overlook_0369.jpg",
+    "busy_seasons": "Mid-March through mid-November",
+    "address": "100 Park Road 71"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-somerville",
@@ -565,7 +689,9 @@ var parkData = [
     "city": "Somerville",
     "lat": "30.308582",
     "lng": "-96.634692",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-somerville/gallery/birch-creek_0010.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-somerville/gallery/birch-creek_0010.jpg",
+    "busy_seasons": "First weekend in March through Fourth of July",
+    "address": "Birch Creek Unit 14222 Park Road 57 "
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-somerville",
@@ -574,7 +700,9 @@ var parkData = [
     "city": "Ledbetter",
     "lat": "30.290719",
     "lng": "-96.667214",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-somerville/gallery/birch-creek_0375-2.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-somerville/gallery/birch-creek_0375-2.jpg",
+    "busy_seasons": "First weekend in March through Fourth of July",
+    "address": "Nails Creek Unit 6280 FM 180"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-tawakoni",
@@ -583,7 +711,9 @@ var parkData = [
     "city": "Wills Point",
     "lat": "32.841871",
     "lng": "-95.993667",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-tawakoni/gallery/p-LTSP-office-Sundance07-spider-webs-075.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-tawakoni/gallery/p-LTSP-office-Sundance07-spider-webs-075.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "10822 FM 2475"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lake-whitney",
@@ -592,7 +722,9 @@ var parkData = [
     "city": "Whitney",
     "lat": "31.931234",
     "lng": "-97.356833",
-    "img_url": "https://tpwd.texas.gov/state-parks/lake-whitney/gallery/tree-at-sunset.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lake-whitney/gallery/tree-at-sunset.jpg",
+    "busy_seasons": "March through October",
+    "address": "433 FM 1244"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lipantitlan",
@@ -601,7 +733,9 @@ var parkData = [
     "city": "",
     "lat": "27.964418",
     "lng": "-97.818382",
-    "img_url": "https://tpwd.texas.gov/state-parks/lipantitlan/gallery/fort-lipantitlan-historic-marker.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lipantitlan/gallery/fort-lipantitlan-historic-marker.jpg",
+    "busy_seasons": "",
+    "address": "Lake Corpus Christi State Park Box 1167"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lockhart",
@@ -610,7 +744,9 @@ var parkData = [
     "city": "Lockhart",
     "lat": "29.855409",
     "lng": "-97.697742",
-    "img_url": "https://tpwd.texas.gov/state-parks/lockhart/gallery/lockhart-2902.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lockhart/gallery/lockhart-2902.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "2012 State Park Road"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/longhorn-cavern",
@@ -619,7 +755,9 @@ var parkData = [
     "city": "Burnet",
     "lat": "30.684441",
     "lng": "-98.350970",
-    "img_url": "https://tpwd.texas.gov/state-parks/longhorn-cavern/gallery/longhorn-caverns_1.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/longhorn-cavern/gallery/longhorn-caverns_1.jpg",
+    "busy_seasons": "",
+    "address": "6211 Park Road 4 S."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lost-maples",
@@ -628,7 +766,9 @@ var parkData = [
     "city": "Vanderpool",
     "lat": "29.807719",
     "lng": "-99.570697",
-    "img_url": "https://tpwd.texas.gov/state-parks/lost-maples/gallery/p-LMSNA_Entrance.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lost-maples/gallery/p-LMSNA_Entrance.jpg",
+    "busy_seasons": "October to November and March to May.",
+    "address": "37221 F.M. 187"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/lyndon-b-johnson",
@@ -637,7 +777,9 @@ var parkData = [
     "city": "Stonewall",
     "lat": "30.237656",
     "lng": "-98.626279",
-    "img_url": "https://tpwd.texas.gov/state-parks/lyndon-b-johnson/gallery/lbj-and-ladybird-in-wildflowers.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/lyndon-b-johnson/gallery/lbj-and-ladybird-in-wildflowers.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "199 Park Rd. 52"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/martin-creek-lake",
@@ -646,7 +788,9 @@ var parkData = [
     "city": "Tatum",
     "lat": "32.277950",
     "lng": "-94.566051",
-    "img_url": "https://tpwd.texas.gov/state-parks/martin-creek-lake/gallery/kids-goofin.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/martin-creek-lake/gallery/kids-goofin.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "9515 County Road 2181D"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/martin-dies-jr",
@@ -655,7 +799,9 @@ var parkData = [
     "city": "Jasper",
     "lat": "30.846627",
     "lng": "-94.165869",
-    "img_url": "https://tpwd.texas.gov/state-parks/martin-dies-jr/gallery/martin-dies_934_023.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/martin-dies-jr/gallery/martin-dies_934_023.jpg",
+    "busy_seasons": "September through Thanksgiving, March through Independence Day",
+    "address": "634 Park Road 48 South"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/mckinney-falls",
@@ -664,7 +810,9 @@ var parkData = [
     "city": "Austin",
     "lat": "30.180752",
     "lng": "-97.722007",
-    "img_url": "https://tpwd.texas.gov/state-parks/mckinney-falls/gallery/McKinney-Falls-959_1_423.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/mckinney-falls/gallery/McKinney-Falls-959_1_423.jpg",
+    "busy_seasons": "March through November",
+    "address": "5808 McKinney Falls Parkway"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/meridian",
@@ -673,7 +821,9 @@ var parkData = [
     "city": "Meridian",
     "lat": "31.890791",
     "lng": "-97.697566",
-    "img_url": "https://tpwd.texas.gov/state-parks/meridian/gallery/meridian_sp-_mg_2819.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/meridian/gallery/meridian_sp-_mg_2819.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "173 Park Road #7"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/goliad/goliad-area-historic-sites#rosario",
@@ -682,7 +832,9 @@ var parkData = [
     "city": "Goliad",
     "lat": "28.644374",
     "lng": "-97.438888",
-    "img_url": "https://tpwd.texas.gov/state-parks/mission-tejas/gallery/tent-camping_9318.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/mission-tejas/gallery/tent-camping_9318.jpg",
+    "busy_seasons": "",
+    "address": "23 Goliad Road"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/mission-tejas",
@@ -691,7 +843,9 @@ var parkData = [
     "city": "Grapeland",
     "lat": "31.542272",
     "lng": "-95.232191",
-    "img_url": "https://tpwd.texas.gov/state-parks/mission-tejas/gallery/mission-tejas_0689.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/mission-tejas/gallery/mission-tejas_0689.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "19343 State Highway 21 E."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/monahans-sandhills",
@@ -700,7 +854,9 @@ var parkData = [
     "city": "Monahans",
     "lat": "31.618795",
     "lng": "-102.812112",
-    "img_url": "https://tpwd.texas.gov/state-parks/monahans-sandhills/gallery/tommy-johnson_0173.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/monahans-sandhills/gallery/tommy-johnson_0173.jpg",
+    "busy_seasons": "March to August",
+    "address": "Park Rd. 41"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/monument-hill-kreische-brewery",
@@ -709,7 +865,9 @@ var parkData = [
     "city": "La Grange",
     "lat": "29.888041",
     "lng": "-96.876365",
-    "img_url": "https://tpwd.texas.gov/state-parks/monument-hill-kreische-brewery/gallery/monument-hill.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/monument-hill-kreische-brewery/gallery/monument-hill.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "414 State Loop 92"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/mother-neff",
@@ -718,7 +876,9 @@ var parkData = [
     "city": "Moody",
     "lat": "31.321559",
     "lng": "-97.469150",
-    "img_url": "https://tpwd.texas.gov/state-parks/mother-neff/gallery/couple-hiking-in-cave-at-mother-neff-sp.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/mother-neff/gallery/couple-hiking-in-cave-at-mother-neff-sp.jpg",
+    "busy_seasons": "Spring, early summer and fall",
+    "address": "1921 Park Road 14"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/mustang-island",
@@ -727,7 +887,9 @@ var parkData = [
     "city": "Port Aransas",
     "lat": "27.672162",
     "lng": "-97.175309",
-    "img_url": "https://tpwd.texas.gov/state-parks/mustang-island/gallery/mustang-island-20050019.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/mustang-island/gallery/mustang-island-20050019.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "9394 State Highway 361"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/old-tunnel",
@@ -736,7 +898,9 @@ var parkData = [
     "city": "Fredericksburg",
     "lat": "30.101079",
     "lng": "-98.820704",
-    "img_url": "https://tpwd.texas.gov/state-parks/old-tunnel/gallery/old-tunnel_web_1644.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/old-tunnel/gallery/old-tunnel_web_1644.jpg",
+    "busy_seasons": "",
+    "address": "10619 Old San Antonio Road"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/palmetto",
@@ -745,7 +909,9 @@ var parkData = [
     "city": "Gonzales",
     "lat": "29.596906",
     "lng": "-97.585140",
-    "img_url": "https://tpwd.texas.gov/state-parks/palmetto/gallery/palmetto-spr_u8e4159-opti.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/palmetto/gallery/palmetto-spr_u8e4159-opti.jpg",
+    "busy_seasons": "Make overnight reservations at least two to three weeks ahead of time from March to November.",
+    "address": "78 Park Road 11 South"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/palo-duro-canyon",
@@ -754,7 +920,9 @@ var parkData = [
     "city": "Canyon",
     "lat": "34.984709",
     "lng": "-101.701867",
-    "img_url": "https://tpwd.texas.gov/state-parks/palo-duro-canyon/gallery/lighthouse-peak.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/palo-duro-canyon/gallery/lighthouse-peak.jpg",
+    "busy_seasons": "Summer months during the play season",
+    "address": "11450 Park Road 5"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/pedernales-falls",
@@ -763,7 +931,9 @@ var parkData = [
     "city": "Johnson City",
     "lat": "30.308054",
     "lng": "-98.257649",
-    "img_url": "https://tpwd.texas.gov/state-parks/pedernales-falls/gallery/spotted-towhee"
+    "img_url": "https://tpwd.texas.gov/state-parks/pedernales-falls/gallery/spotted-towhee",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "2585 Park Road 6026"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/port-isabel-lighthouse",
@@ -772,7 +942,9 @@ var parkData = [
     "city": "Port Isabel",
     "lat": "26.077984",
     "lng": "-97.207133",
-    "img_url": "https://tpwd.texas.gov/state-parks/port-isabel-lighthouse/gallery/lighthouse_3094.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/port-isabel-lighthouse/gallery/lighthouse_3094.jpg",
+    "busy_seasons": "",
+    "address": "421 East Queen Isabella Blvd"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/possum-kingdom",
@@ -781,7 +953,9 @@ var parkData = [
     "city": "Caddo",
     "lat": "32.873573",
     "lng": "-98.559331",
-    "img_url": "https://tpwd.texas.gov/state-parks/possum-kingdom/gallery/possum-kingdom_0125.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/possum-kingdom/gallery/possum-kingdom_0125.jpg",
+    "busy_seasons": "March through October on weekends, June through August all week",
+    "address": "3901 State Park Rd. 33"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/purtis-creek",
@@ -790,7 +964,9 @@ var parkData = [
     "city": "Eustace",
     "lat": "32.353794",
     "lng": "-95.993554",
-    "img_url": "https://tpwd.texas.gov/state-parks/purtis-creek/gallery/fishing-pier-long-shot.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/purtis-creek/gallery/fishing-pier-long-shot.jpg",
+    "busy_seasons": "March through November and every first Monday weekend",
+    "address": "14225 FM 316 N."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/ray-roberts-lake",
@@ -799,7 +975,9 @@ var parkData = [
     "city": "Pilot Point",
     "lat": "33.365671",
     "lng": "-97.012150",
-    "img_url": "https://tpwd.texas.gov/state-parks/ray-roberts-lake/gallery/ray-roberts_6862.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/ray-roberts-lake/gallery/ray-roberts_6862.jpg",
+    "busy_seasons": "March through November",
+    "address": "Isle du Bois Unit 100 PW 4137"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/ray-roberts-lake",
@@ -808,7 +986,9 @@ var parkData = [
     "city": "Valley View",
     "lat": "33.429802",
     "lng": "-97.056449",
-    "img_url": "https://tpwd.texas.gov/state-parks/ray-roberts-lake/gallery/canoe-2.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/ray-roberts-lake/gallery/canoe-2.jpg",
+    "busy_seasons": "March through November",
+    "address": "Johnson Branch Unit 100 PW 4153"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/resaca-de-la-palma",
@@ -817,7 +997,9 @@ var parkData = [
     "city": "Olmito",
     "lat": "25.996275",
     "lng": "-97.5712694",
-    "img_url": "https://tpwd.texas.gov/state-parks/resaca-de-la-palma/gallery/resaca-de-las-palmas-sp-_g4f6121.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/resaca-de-la-palma/gallery/resaca-de-las-palmas-sp-_g4f6121.jpg",
+    "busy_seasons": "",
+    "address": "1000 New Carmen Ave."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/san-angelo",
@@ -826,7 +1008,9 @@ var parkData = [
     "city": "San Angelo",
     "lat": "31.463922",
     "lng": "-100.508038",
-    "img_url": "https://tpwd.texas.gov/state-parks/san-angelo/gallery/cliff-overlook.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/san-angelo/gallery/cliff-overlook.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "362 S. FM 2288"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/san-jacinto-battleground",
@@ -835,7 +1019,9 @@ var parkData = [
     "city": "LaPorte",
     "lat": "29.751578",
     "lng": "-95.089694",
-    "img_url": "https://tpwd.texas.gov/state-parks/san-jacinto-battleground/gallery/967-1314_300.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/san-jacinto-battleground/gallery/967-1314_300.jpg",
+    "busy_seasons": "",
+    "address": "3523 Independence Parkway South"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/sea-rim",
@@ -844,7 +1030,9 @@ var parkData = [
     "city": "Sabine Pass",
     "lat": "29.675539",
     "lng": "-94.043525",
-    "img_url": "https://tpwd.texas.gov/state-parks/sea-rim/gallery/gambusia-trl_7318_03.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/sea-rim/gallery/gambusia-trl_7318_03.jpg",
+    "busy_seasons": "19335 S. Gulfway Drive",
+    "address": "April through July"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/seminole-canyon",
@@ -853,7 +1041,9 @@ var parkData = [
     "city": "Comstock",
     "lat": "29.700094",
     "lng": "-101.312875",
-    "img_url": "https://tpwd.texas.gov/state-parks/seminole-canyon/gallery/seminole-caynon_7654.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/seminole-canyon/gallery/seminole-caynon_7654.jpg",
+    "busy_seasons": "March, April and May",
+    "address": "P.O. Box 820"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/sheldon-lake",
@@ -862,7 +1052,9 @@ var parkData = [
     "city": "Houston",
     "lat": "29.857461",
     "lng": "-95.160029",
-    "img_url": "https://tpwd.texas.gov/state-parks/sheldon-lake/gallery/sheldon-kids.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/sheldon-lake/gallery/sheldon-kids.jpg",
+    "busy_seasons": "Spring, summer and fall",
+    "address": "14140 Garrett Rd."
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/south-llano-river",
@@ -871,7 +1063,9 @@ var parkData = [
     "city": "Junction 76849",
     "lat": "30.445396",
     "lng": "-99.804102",
-    "img_url": "https://tpwd.texas.gov/state-parks/south-llano-river/gallery/sllano-tubing_115.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/south-llano-river/gallery/sllano-tubing_115.jpg",
+    "busy_seasons": "March through October",
+    "address": "1927 Park Road 73 "
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/stephen-f-austin",
@@ -880,7 +1074,9 @@ var parkData = [
     "city": "San Felipe",
     "lat": "29.811982",
     "lng": "-96.108059",
-    "img_url": "https://tpwd.texas.gov/state-parks/stephen-f-austin/gallery/sfa-hall_0838.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/stephen-f-austin/gallery/sfa-hall_0838.jpg",
+    "busy_seasons": "March to May, October to November",
+    "address": "Park Rd. 38"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/tyler",
@@ -889,7 +1085,9 @@ var parkData = [
     "city": "Tyler",
     "lat": "32.482180",
     "lng": "-95.283396",
-    "img_url": "https://tpwd.texas.gov/state-parks/tyler/gallery/rv-long-shot-on-lake.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/tyler/gallery/rv-long-shot-on-lake.jpg",
+    "busy_seasons": "March to Thanksgiving",
+    "address": "789 Park Road 16"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/village-creek",
@@ -898,7 +1096,9 @@ var parkData = [
     "city": "Lumberton",
     "lat": "30.250499",
     "lng": "-94.178700",
-    "img_url": "https://tpwd.texas.gov/state-parks/village-creek/gallery/villiage-creek-959_05_02.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/village-creek/gallery/villiage-creek-959_05_02.jpg",
+    "busy_seasons": "February to September",
+    "address": "8854 Park Road 74"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/washington-on-the-brazos",
@@ -907,7 +1107,9 @@ var parkData = [
     "city": "Washington",
     "lat": "30.323922",
     "lng": "-96.153673",
-    "img_url": "https://tpwd.texas.gov/state-parks/washington-on-the-brazos/gallery/independence-hall-exhibit-final.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/washington-on-the-brazos/gallery/independence-hall-exhibit-final.jpg",
+    "busy_seasons": "Spring and summer",
+    "address": "23400 Park Rd. 12"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/wyler-aerial-tramway",
@@ -916,7 +1118,9 @@ var parkData = [
     "city": "El Paso",
     "lat": "31.809390",
     "lng": "-106.478426",
-    "img_url": "https://tpwd.texas.gov/state-parks/wyler-aerial-tramway/gallery/wyler-tram-_959.61_1.jpg"
+    "img_url": "https://tpwd.texas.gov/state-parks/wyler-aerial-tramway/gallery/wyler-tram-_959.61_1.jpg",
+    "busy_seasons": "Memorial Day through Labor Day, weekends and other holidays.",
+    "address": "1700 McKinley"
   },
   {
     "link": "https://tpwd.texas.gov/state-parks/goliad/goliad-area-historic-sites#zaragoza",
@@ -925,7 +1129,9 @@ var parkData = [
     "city": "Goliad",
     "lat": "28.647329",
     "lng": "-97.383136",
-    "img_url": "https://tpwd.texas.gov/state-parks/goliad/images/goliad_5790_web.jpg/@@images/1bf8ce38-0c7d-4a46-8b89-eed27ee9f3d1.jpeg"
+    "img_url": "https://tpwd.texas.gov/state-parks/goliad/images/goliad_5790_web.jpg/@@images/1bf8ce38-0c7d-4a46-8b89-eed27ee9f3d1.jpeg",
+    "busy_seasons": "",
+    "address": "Goliad State Park and Historic Site, Goliad County"
   }
 ]
 

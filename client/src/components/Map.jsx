@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { TOKEN_GOOGLE_MAPS } from '../config/mapsConfig.js';
 import GoogleMapReact from 'google-map-react';
-import parkData from '../data/parkData.js'
+import { TOKEN_GOOGLE_MAPS } from '../config/mapsConfig';
+import parkData from '../data/parkData'
 import Search from './Search.jsx'
-import styles from './Map.css'
+import styles from '../css/Map.css'
 
-// Creates markers for each park in this.state.filteredParkData
 class Map extends Component {
   constructor() {
     super();
@@ -13,10 +12,11 @@ class Map extends Component {
     this.state = {
       map: null,
       markers: null,
+      currentInfoWindow: null,
+      searchTerm: '',
       parkData,
       filteredParkData: parkData,
       center: { lat: 31.9686, lng: -99.9018 },
-      searchTerm: null,
       zoom: 6,
     };
 
@@ -27,11 +27,11 @@ class Map extends Component {
     this.searchParks = this.searchParks.bind(this);
   }
 
-
+  // Creates a marker for each park in filteredParkData state, each with an info window.
   loadMarkers(map, parkData) {
     let markers = [];
     parkData.forEach((park) => {
-      let { lat, lng, title, phone, link, img_url } = park;
+      let { lat, lng, title, phone, link, img_url, address, busy_seasons, city } = park;
       lat = parseFloat(lat);
       lng = parseFloat(lng);
       var marker = new google.maps.Marker({
@@ -46,29 +46,30 @@ class Map extends Component {
         `<h1>${title}</h1>`+
         '<div id="bodyContent">'+
           `<img class="location-image" src=${img_url}></img>` +
+            `<div>Address: ${address}, ${city}, TX</div>` +
             `<div>Phone Number: ${phone} </div>` +
-            `<div>Coordinates: Latitute: ${lat}, Longitude: ${lng}` +
+            `<div>Latitute: ${lat} | Longitude: ${lng}` +
           `<p>Park Website: <a href="${link}">${title}'s Page</a> `+
+          `<p>Busy Season: ${busy_seasons}</p>`
         '</div>'+
       '</div>';
   
-      let infowindow = new google.maps.InfoWindow({
+      let currentInfoWindow = new google.maps.InfoWindow({
         content: contentString
       });
-  
-      marker.addListener('click', () => {
-        infowindow.open(map, marker);
-      });
 
+      // Pops up an info window. If one already open, close it first before opening the new one.
+      marker.addListener('click', () => {
+        if (this.state.currentInfoWindow) {
+          this.state.currentInfoWindow.close();
+        }
+        currentInfoWindow.open(map, marker);
+        this.setState({currentInfoWindow})
+      });
       markers.push(marker);
-    })
-  
-    // creates marker clusters for all parks on the map
-    // let markerCluster = new MarkerClusterer(map, markers,
-    //   {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-    // this.setState({markers, markerCluster});
+    });
     this.setState({markers});
-  };
+  }
 
   setMapOnAll(map) {
     const { markers } = this.state;
@@ -93,19 +94,13 @@ class Map extends Component {
     }
   }
 
-  /* Search Function
-   Should modify parkData state
-   Calls loadMarkers passing in the now updated state.
-   This should result in a new markers/new marker cluster
-   DON'T FORGET TO ALLOW FOR ALL THE PARKS TO RERENDER IF YOU PRESS RESET/SEARCH FOR EMPTY TERM
-  */
   searchParks() {
     const { searchTerm, parkData, map } = this.state;
-    let filteredParkData = parkData.filter((park, index) => {
+    let filteredParkData = parkData.filter((park) => {
       return park.title.includes(searchTerm);
     })    
 
-    this.setState({filteredParkData}, (err, success) => {
+    this.setState({filteredParkData}, (err) => {
       if (err) throw err;
       this.clearMarkers();
       this.loadMarkers(map, filteredParkData)
@@ -116,7 +111,7 @@ class Map extends Component {
     const { center, zoom, filteredParkData } = this.state;
     return (
       <div style={{ height: '80vh', width: '100%' }}>
-        <h1>StateParkCell</h1>
+        <h1>ParkCell</h1>
         <Search saveSearchTerm={this.saveSearchTerm} searchParks={this.searchParks}/>
         <GoogleMapReact
           bootstrapURLKeys={{ key: TOKEN_GOOGLE_MAPS }}
