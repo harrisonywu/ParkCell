@@ -1,11 +1,11 @@
 {
-  "name": "ridecell-app",
+  "name": "ParkCell",
   "version": "1.0.0",
-  "description": "An app that displays state parks",
+  "description": "Frontend Challenge from Ridecell",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -d --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack -p",
+    "react-dev": "webpack -d --watch"
   },
   "author": "Harrison Wu",
   "license": "ISC",
@@ -14,8 +14,6 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "semantic-ui": "^2.4.2",
-    "semantic-ui-react": "^0.87.1",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.2"
   },
