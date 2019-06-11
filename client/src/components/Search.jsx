@@ -5,8 +5,8 @@ const Search = (props) => {
   const { saveSearchTerm, searchParks } = props;
 
   return (
-    <form>
-      <input onChange={saveSearchTerm} onSubmit={searchParks} type="text" placeholder="Search park name"></input>
+    <form onSubmit={searchParks}>
+      <input onChange={saveSearchTerm}  type="text" placeholder="Search park name"></input>
       <input onClick={searchParks} type="button" value="Search!"></input>
       <input onClick={() => {saveSearchTerm(null, 'a', searchParks);}}            type="button" value="Reset Map"></input>
       <input onClick={() => {saveSearchTerm(null, 'Park', searchParks);}}         type="button" value="Show Parks"></input>

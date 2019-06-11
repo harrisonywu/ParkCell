@@ -17,7 +17,7 @@ class Map extends Component {
       parkData,
       filteredParkData: parkData,
       center: { lat: 31.9686, lng: -99.9018 },
-      zoom: 6,
+      zoom: 6.3,
     };
 
     this.setMapOnAll = this.setMapOnAll.bind(this);
@@ -42,6 +42,7 @@ class Map extends Component {
       
       let busySeasonString = busy_seasons ? busy_seasons : 'No season information.';
 
+      // Creates the info window content for each location.
       let contentString = 
       '<div id="content">'+
         '<div id="siteNotice"></div>'+
@@ -62,9 +63,7 @@ class Map extends Component {
 
       // Pops up an info window. If one already open, close it first before opening the new one.
       marker.addListener('click', () => {
-        if (this.state.currentInfoWindow) {
-          this.state.currentInfoWindow.close();
-        }
+        if (this.state.currentInfoWindow) { this.state.currentInfoWindow.close(); }
         currentInfoWindow.open(map, marker);
         this.setState({currentInfoWindow})
       });
@@ -73,6 +72,7 @@ class Map extends Component {
     this.setState({markers});
   }
 
+  // Sets markers on the map
   setMapOnAll(map) {
     const { markers } = this.state;
     for (var i = 0; i < markers.length; i++) {
@@ -80,10 +80,13 @@ class Map extends Component {
     }
   }
 
+  // Removes the markers from the map
   clearMarkers() {
     this.setMapOnAll(null);
   }
 
+  // if no keyword is passed in, saves the keyword in the input bar in state.
+  // if keyword IS passed in, saves that in state instead.
   saveSearchTerm(e, keyword, callback) {
     if (!keyword) {
       this.setState({ searchTerm: e.target.value}, () => {
@@ -96,7 +99,10 @@ class Map extends Component {
     }
   }
 
-  searchParks() {
+  // Searches through parkData for titles containing the current searchTerm saved in state.
+  // This function handles capitalization of the first letter.
+  searchParks(e) {
+    if (e) e.preventDefault();
     const { searchTerm, parkData, map } = this.state;
     let searchTermCapital = searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1);
     let filteredParkData = parkData.filter((park) => {
@@ -121,9 +127,7 @@ class Map extends Component {
           defaultCenter={center}
           defaultZoom={zoom}
           yesIWantToUseGoogleMapApiInternals
-          onGoogleApiLoaded={({ map }) => {
-            this.setState({map}, () => (this.loadMarkers(map, filteredParkData)));
-          }} 
+          onGoogleApiLoaded={({ map }) => { this.setState({map}, () => (this.loadMarkers(map, filteredParkData))); }} 
         ></GoogleMapReact>
       </div>
     );
