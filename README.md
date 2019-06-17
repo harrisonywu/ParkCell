@@ -6,15 +6,14 @@ This project is built with Node.js, React, and utilizes Google Maps API.
 
 # Start this Application
 First, update the mapConfig.js file in client/src/config with the Google Maps API Key.
-Then open the public/index.html in the browser.
 
-I've already included the webpack bundle, but if you want to create it yourself, follow the instructions below before opening the index.html file.
-
-Run the following commands in the root directory of this project.
+Then run the following commands in the root directory of this project.
 ```sh
 npm install
 npm start
 ```
+
+Once complete, open the public/index.html file in the browser.
 
 Note: I am running Node v6.11.2.
 
