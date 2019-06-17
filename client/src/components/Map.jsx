@@ -65,7 +65,7 @@ class Map extends Component {
       marker.addListener('click', () => {
         if (this.state.currentInfoWindow) { this.state.currentInfoWindow.close(); }
         currentInfoWindow.open(map, marker);
-        this.setState({currentInfoWindow})
+        this.setState({currentInfoWindow});
       });
       markers.push(marker);
     });
@@ -88,12 +88,12 @@ class Map extends Component {
   // if no keyword is passed in, saves the keyword in the input bar in state.
   // if keyword IS passed in, saves that in state instead.
   saveSearchTerm(e, keyword, callback) {
-    if (!keyword) {
-      this.setState({ searchTerm: e.target.value}, () => {
+    if (!keyword && keyword != '') {
+      this.setState({ searchTerm: e.target.value }, () => {
         if (callback) callback();
       });
     } else {
-      this.setState({ searchTerm: keyword}, () => {
+      this.setState({ searchTerm: keyword }, () => {
         if (callback) callback();
       });
     }
@@ -112,7 +112,7 @@ class Map extends Component {
     this.setState({filteredParkData}, (err) => {
       if (err) throw err;
       this.clearMarkers();
-      this.loadMarkers(map, filteredParkData)
+      this.loadMarkers(map, filteredParkData);
     })
    }
 
