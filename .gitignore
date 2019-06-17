@@ -5,4 +5,4 @@ node_modules
 # public/bundle.js
 
 # google maps API key
-/client/src/config/mapsConfig.js
+# /client/src/config/mapsConfig.js

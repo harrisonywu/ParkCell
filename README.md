@@ -5,7 +5,8 @@ A web application that displays all state parks in Texas on a map with pins.
 This project is built with Node.js, React, and utilizes Google Maps API.
 
 # Start this Application
-Simply open the index.html in the browser.
+First, update the mapConfig.js file in client/src/config with the Google Maps API Key.
+Then open the public/index.html in the browser.
 
 I've already included the webpack bundle, but if you want to create it yourself, follow the instructions below before opening the index.html file.
 
@@ -25,5 +26,4 @@ Note: I am running Node v6.11.2.
 # Some Notes
 - I got the data about all the state parks by webscraping from the Texas Parks & Wildlife Website: https://tpwd.texas.gov/state-parks/nearby. The data included not only state parks but a few other points of interest, so I created a filter to accomadate for that. 
 - In the future, I would consider putting the map markers themselves in a separate React component.
-
 
